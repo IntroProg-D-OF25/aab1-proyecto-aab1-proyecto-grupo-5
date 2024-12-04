@@ -31,7 +31,7 @@ public class proyecto {
 
         // Mostrar datos iniciales
         System.out.printf("\nNombre              : %s\n", nombre);
-        System.out.printf("Edad                : %d años\n", edad);
+        System.out.printf("Edad                : %d years\n", edad);
         System.out.printf("Grupo de Edad       : %s\n", grupoEdad);
         System.out.printf("Rango esperado      : %d - %d BPM\n", (int)rangoMin, (int)rangoMax);
         System.out.printf("Frecuencia maxima   : %d BPM\n\n", fcm);
@@ -48,8 +48,8 @@ public class proyecto {
     // Función para calcular la edad
     public static int calcularEdad(int anio, int mes, int dia) {
         int anioActual = 2024; 
-        int mesActual = 11;    
-        int diaActual = 27;    
+        int mesActual = 12;    
+        int diaActual = 04;    
 
         int edad = anioActual - anio;
         if (mesActual < mes || (mesActual == mes && diaActual < dia)) {
@@ -67,7 +67,7 @@ public class proyecto {
         } else if (edad <= 17) {
             return "Adolescente";
         } else if (edad <= 64) {
-            return "Adulto (18-64 años)";
+            return "Adulto (18-64)";
         } else {
             return "Adulto mayor";
         }
@@ -140,8 +140,7 @@ public class proyecto {
         for (String linea : historial) {
             System.out.println(linea);
         }
-
-        // Mostrar mensaje final
-        System.out.println("\nPaciente entró en Taquicardia. Ejercicio finalizado. ¡Gracias!");
+        
+        System.out.println("\nPaciente entro en Taquicardia. Ejercicio finalizado. ¡Gracias!");
     }
 }
