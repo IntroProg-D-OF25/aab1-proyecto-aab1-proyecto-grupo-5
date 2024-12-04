@@ -6,7 +6,7 @@ public class AdivinaNumero {
         int puntos = 10;
         boolean adivinado = false;
         System.out.println("¡Bienvenido al juego de adivinar el número!");
-        System.out.println("He generado un número entre 1 y 100. Tienes 5 puntos para empezar.");
+        System.out.println("He generado un número entre 1 y 100. Tienes 10 puntos para empezar.");
         System.out.println("Por cada pista, perderás 1 punto. ¡Buena suerte!");
         while (puntos > 0 && !adivinado) {
             System.out.print("Ingresa tu suposición: ");
